@@ -1,0 +1,9 @@
+{
+	"MongoDb": {
+		"Host": "10.8.0.1",
+		"Port": 27017,
+		"Username": "",
+		"Password": "",
+		"Database": "iwbr"
+	}
+}

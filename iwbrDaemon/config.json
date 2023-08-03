@@ -1,0 +1,108 @@
+{
+	"DebugEnable": true,
+	"Binance": {
+		"ApiKey": "",
+		"SecretKey": "",
+		"QuoteAsset": "BUSD",
+		"MaxCallPerSec": 20,
+		"RecentKLinesSize": 0,
+		"EnableTradingLong": true,
+		"EnableTradingShort": false
+	},
+	"MongoDb": {
+		"Host": "10.8.0.1",
+		"Port": 27017,
+		"Username": "",
+		"Password": "",
+		"Database": "iwbr"
+	},
+	"Position": {
+		"InvestQty": 15,
+		"MaxOpenPos": 10,
+		"FindHighVolatility": true,
+		"FindFirstLong": true,
+		"MinWalletBalance": 50,
+		"CloseAll": false,
+		"GlobalTakeProfit": {
+			"IsEnabled": false,
+			"Value": 2
+		},
+		"GlobalStopLoss": {
+			"IsEnabled": false,
+			"Value": -5
+		},
+		"StopLoss": {
+			"IsEnabled": true,
+			"Value": -10
+		},
+		"TakeProfit": {
+			"IsEnabled": false,
+			"Value": 1
+		},
+		"TrailingStopLoss": {
+			"IsEnabled": true,
+			"StartProfit": 2.1,
+			"DiffProfit": 0.2,
+			"MinProfit": 0.2
+		},
+		"LosingCooldown": {
+			"IsEnabled": true,
+			"Minutes": 240,
+			"StartFrom": 0.2
+		},
+		"FreezeCooldown": {
+			"IsEnabled": true,
+			"AcceptableError": 0.02,
+			"Minutes": 60
+		}
+	},
+	"Blacklist": [
+		"BNBBUSD",
+		"USDCBUSD",
+		"USDTBUSD",
+		"EURBUSD",
+		"TUSDBUSD"
+	],
+	"CLI": {
+		"IsEnabled": false
+	},
+	"Analysis": {
+		"Indicators": {
+			"PivotPoints": {
+				"IsEnabled": false
+			},
+			"ADX": {
+				"IsEnabled": true,
+				"Period": 14,
+				"Threshold": 24
+			},
+			"BollingerBands": {
+				"IsEnabled": false,
+				"Period": 14,
+				"Deviation": 2
+			},
+			"MACD": {
+				"IsEnabled": true,
+				"FastPeriod": 4,
+				"SlowPeriod": 8,
+				"SignalPeriod": 5
+			},
+			"RSI": {
+				"IsEnabled": false,
+				"Period": 14
+			},
+			"SMA": {
+				"IsEnabled": true,
+				"Period": 14
+			},
+			"Stochastic": {
+				"IsEnabled": true,
+				"LoopbackPeriods": 8,
+				"SignalPeriods": 3,
+				"SmoothPeriods": 3,
+				"KFactor": 1.0,
+				"DFactor": 1.0
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "iwbrDaemon": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}
